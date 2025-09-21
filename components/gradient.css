@@ -1,0 +1,100 @@
+.star-night{
+  background-image: linear-gradient(
+    175deg,
+    hsl(213deg 39% 11%) 0%,
+    hsl(211deg 40% 12%) 28%,
+    hsl(210deg 41% 13%) 40%,
+    hsl(208deg 42% 15%) 51%,
+    hsl(207deg 43% 16%) 62%,
+    hsl(206deg 44% 17%) 76%,
+    hsl(204deg 46% 18%) 100%
+  );
+}
+
+
+.pinkish-sky{
+  background-image: linear-gradient(
+    175deg,
+    hsl(231deg 37% 7%) 0%,
+    hsl(278deg 25% 12%) 28%,
+    hsl(326deg 32% 17%) 40%,
+    hsl(351deg 36% 23%) 51%,
+    hsl(14deg 43% 27%) 62%,
+    hsl(33deg 53% 26%) 76%,
+    hsl(56deg 49% 25%) 100%
+  );
+}
+
+
+.morning{
+  background-image: linear-gradient(
+    0deg,
+    hsl(44deg 88% 55%) 0%,
+    hsl(44deg 75% 52%) 7%,
+    hsl(44deg 64% 50%) 16%,
+    hsl(44deg 60% 47%) 25%,
+    hsl(43deg 56% 45%) 35%,
+    hsl(43deg 52% 42%) 45%,
+    hsl(43deg 47% 39%) 54%,
+    hsl(43deg 43% 36%) 64%,
+    hsl(43deg 38% 33%) 73%,
+    hsl(42deg 33% 31%) 81%,
+    hsl(42deg 26% 28%) 88%,
+    hsl(41deg 19% 25%) 94%,
+    hsl(40deg 11% 22%) 100%
+  );
+}
+
+
+.north-pole {
+  background-image: linear-gradient(
+    0deg,
+    hsl(152deg 88% 55%) 0%,
+    hsl(151deg 71% 51%) 7%,
+    hsl(150deg 63% 47%) 16%,
+    hsl(150deg 60% 43%) 25%,
+    hsl(149deg 56% 39%) 35%,
+    hsl(148deg 52% 35%) 45%,
+    hsl(147deg 48% 31%) 54%,
+    hsl(146deg 44% 27%) 64%,
+    hsl(145deg 40% 22%) 73%,
+    hsl(144deg 34% 18%) 81%,
+    hsl(142deg 28% 14%) 88%,
+    hsl(140deg 18% 9%) 94%,
+    hsl(0deg 0% 4%) 100%
+  );
+}
+
+
+.red-btn-gradient{
+  background-image: linear-gradient(
+    90deg,
+    hsl(0, 98%, 39%) 0%,
+    hsl(359deg 98% 30%) 20%,
+    hsl(359deg 97% 36%) 33%,
+    hsl(359deg 96% 43%) 44%,
+    hsl(359deg 96% 43%) 54%,
+    hsl(359deg 97% 36%) 65%,
+    hsl(359deg 98% 30%) 79%,
+    hsl(0deg 98% 24%) 100%
+  );
+}
+
+
+.animate-shrink{
+   &:hover{
+     animation: shrink 0.2s linear infinite;
+   }
+}
+
+@keyframes shrink{
+   0%{
+     transform: translateX(-1px);
+   }
+   50%{
+    transform: translate(1px);
+   }
+   100%{
+    transform: translate(0px);
+   }
+}
