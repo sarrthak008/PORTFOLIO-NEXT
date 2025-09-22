@@ -24,7 +24,7 @@ const Setting = ({ setBgGradinet, setIsSettingPannel }) => {
   }
 
   return (
-    <div className='w-[40%] h-[33vh] bg-gray-300/99 overflow-hidden absolute right-[20%] bottom-[0%] rounded-xl p-4'>
+    <div className='w-[85%] md:w-[40%] h-[33vh] bg-gray-300/99 overflow-hidden absolute right-[10%] md:right-[20%] bottom-[0%] rounded-xl p-4'>
       <h3 className='text-sm'>Set Climate.</h3>
       <div className='flex gap-4 mt-4'>
         <div className='h-[60px] w-[60px] cursor-pointer star-night' onClick={() => handelGradinet('star-night')}></div>

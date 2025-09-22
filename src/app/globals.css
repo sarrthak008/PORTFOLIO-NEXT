@@ -8,4 +8,10 @@ body {
   /* color:whitesmoke; */
   overflow-x: hidden;
   font-family: "Quicksand", sans-serif;
+  /* scrollbar-width: none; */
+  /* -ms-overflow-style: none */
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }

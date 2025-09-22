@@ -81,6 +81,10 @@
 }
 
 
+.img-low{
+  filter: brightness(0.3) blur(0px);
+}
+
 .animate-shrink{
    &:hover{
      animation: shrink 0.2s linear infinite;
