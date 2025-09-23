@@ -3,6 +3,7 @@ import HeaderBg from '../../components/HeaderBg'
 import Navbar from '../../components/Navbar'
 import MyStory from '../../components/MyStory'
 import Skills from '../../components/Skills'
+import Projects from '../../components/Projects'
 
 const Page = () => {
   return (
@@ -11,6 +12,7 @@ const Page = () => {
        <HeaderBg/>
        <MyStory/>
        <Skills/>
+       <Projects/>
     </>
   )
 }

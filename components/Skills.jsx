@@ -6,26 +6,33 @@ import HOVERSOUND from "../public/sounds/hover.mp3"
 import SettingDownSound from '../public/sounds/pop-down.mp3'
 import SwichOnSound from "../public/sounds/switchon.mp3"
 import useSound from 'use-sound'
-import BGIMG from "../public/images/infobg1.jpeg"
+import BGIMG from "../public/images/key2.png"
 
 
-const SkillsModal = ({setIsmodelOpen,info}) => {
+const SkillsModal = ({ setIsmodelOpen, info }) => {
 
-    const [closeSound] = useSound(SettingDownSound)
+  const [closeSound] = useSound(SettingDownSound)
 
-     const handelClose =()=>{
-      closeSound()
-      navigator.vibrate(200)
-      setIsmodelOpen(false)
-     }
+  const handelClose = () => {
+    closeSound()
+    navigator.vibrate(200)
+    setIsmodelOpen(false)
+  }
 
   return (
-    <div className='fixed top-0 left-0 overflow-hidden backdrop-blur-sm  h-screen w-screen flex items-center justify-center'>
-      <div className='w-[50vw] h-[40vh] bg-gray-300 rounded-xl relative overflow-hidden'>
-        <div className='absolute h-full w-full overflow-hidden'>
-           <img src={BGIMG.src} className='h-full w-full object-cover brightness-[0.4]'/>
+    <div className='fixed z-[100000] top-0 left-0 overflow-hidden backdrop-blur-sm  h-screen w-screen flex items-center justify-center'>
+      <div className='w-[95vw] md:w-[50vw] h-[40vh] md:h-[33vh] bg-gray-300 rounded-xl relative overflow-hidden p-3'>
+
+        <div className='relative z-10 h-full w-full backdrop-blur-[1px]'>
+          <h2 className='text-2xl text-pink-500'>{info.name}</h2>
+          <p className='text-gray-900 text-base mt-4'>{info.info}</p>
+          <a className='mt-5 block text-blue-600' href={info.website} target='_blank'>get more info <i className="ri-arrow-right-line"></i></a>
         </div>
-        <span className='absolute top-[2%] right-[2%] cursor-pointer animate-shrink' onClick={handelClose}><i className="ri-close-line text-2xl"></i></span>
+
+        <div className='w-[80%] h-full absolute top-0 left-0 flex items-center justify-center drop-shadow-2xl'>
+          <img src={BGIMG.src} className='h-full w-full object-cover brightness-90' />
+        </div>
+        <span className='absolute z-[40] top-[2%] right-[2%] cursor-pointer animate-shrink' onClick={handelClose}><i className="ri-close-line text-2xl"></i></span>
       </div>
     </div>
   )
@@ -38,7 +45,7 @@ const Skills = () => {
   let [playOn] = useSound(HOVERSOUND, { volume: 0.2 });
   let [SwichOnSoundPlay] = useSound(SwichOnSound)
   const [isModelOpen, setIsmodelOpen] = useState(false)
-  const [openInfo,setIsOpenInfo] = useState('')
+  const [openInfo, setIsOpenInfo] = useState('')
 
 
 
@@ -71,7 +78,7 @@ const Skills = () => {
           }
         </div>
       </div>
-      {isModelOpen && <SkillsModal setIsmodelOpen={setIsmodelOpen} info={openInfo}/>}
+      {isModelOpen && <SkillsModal setIsmodelOpen={setIsmodelOpen} info={openInfo} />}
     </div>
   )
 }

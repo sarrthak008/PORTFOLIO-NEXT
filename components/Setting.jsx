@@ -33,7 +33,7 @@ const Setting = ({ setBgGradinet, setIsSettingPannel }) => {
         <div className='h-[60px] w-[60px] cursor-pointer morning' onClick={() => handelGradinet('morning')}></div>
       </div>
       <p className='mt-6 text-sm text-gray-500'>set your favourite climate then enjoy work.</p>
-      <button className='absolute bottom-[5%] right-[5%] red-btn-gradient border-1 py-1 px-8 cursor-pointer animate-shrink shadow-xl shadow-gray-600 text-gray-200 rounded-md'>Apply</button>
+      {/* <button className='absolute bottom-[5%] right-[5%] red-btn-gradient border-1 py-1 px-8 cursor-pointer animate-shrink shadow-xl shadow-gray-600 text-gray-200 rounded-md'>Apply</button> */}
       <span className='absolute top-[2%] right-[2%] cursor-pointer animate-shrink' onClick={handelClose}><i className="ri-close-line text-2xl"></i></span>
     </div>
   )
