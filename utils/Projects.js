@@ -5,7 +5,7 @@ import noteapp from "../public/projects/noteapp.png"
 
 const PROJECTS = [
     {
-        type:"web",
+        type:"web",  // web || app 
         name:"easyCode",
         info:"Designed a platform for coding tutorials with step-by-step lessons and interactive features.Developed responsive UI using React.js and Tailwind CSS.Implemented secure authentication (JWT + Google OAuth) and course management APIs with Node.js and Express.js.Designed MongoDB schemas for user data, course content, and student progress tracking.",
         repo:"hifhdfi",
@@ -13,33 +13,6 @@ const PROJECTS = [
         status:"complete",
         image_url:easycode.src,
         technology :["React.js","taiwind","node.js","Mongo db","Vercel","+more"]
-    },
-    {
-        type:"web",
-        name:"easyCode",
-        info:"gsdgusddddddddddddddddddddddddddddddddddddddddddddddddd",
-        repo:"hifhdfi",
-        live_url:"hddfudf",
-        status:"complete",
-        image_url:noteapp.src
-    },
-    {
-        type:"web",
-        name:"easyCode",
-        info:"gsdgusddddddddddddddddddddddddddddddddddddddddddddddddd",
-        repo:"hifhdfi",
-        live_url:"hddfudf",
-        status:"complete",
-        image_url:keyrush.src
-    },
-    {
-        type:"app",
-        name:"easyCode",
-        info:"gsdgusddddddddddddddddddddddddddddddddddddddddddddddddd",
-        repo:"hifhdfi",
-        live_url:"hddfudf",
-        status:"complete",
-        image:""
     }
 ]
 

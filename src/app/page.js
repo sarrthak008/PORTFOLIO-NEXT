@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar'
 import MyStory from '../../components/MyStory'
 import Skills from '../../components/Skills'
 import Projects from '../../components/Projects'
+import SocialMedia from '../../components/SocialMedia'
 
 const Page = () => {
   return (
@@ -13,6 +14,7 @@ const Page = () => {
        <MyStory/>
        <Skills/>
        <Projects/>
+       <SocialMedia/>
     </>
   )
 }

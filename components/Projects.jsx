@@ -101,7 +101,7 @@ const ProjectCard = ({ project, index }) => {
 
 const Projects = () => {
   return (
-    <div className='min-h-[60vh] w-screen relative z-10'>
+    <div className='min-h-[80vh] w-screen relative z-10'>
       <div className='w-[95%] md:w-[90%] mx-auto mt-20 '>
         <h2 className='text-pink-600 text-2xl'>Work Showcase</h2>
         <p className='text-sm text-gray-400'>
