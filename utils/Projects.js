@@ -7,11 +7,12 @@ const PROJECTS = [
     {
         type:"web",
         name:"easyCode",
-        info:"gsdgusddddddddddddddddddddddddddddddddddddddddddddddddd",
+        info:"Designed a platform for coding tutorials with step-by-step lessons and interactive features.Developed responsive UI using React.js and Tailwind CSS.Implemented secure authentication (JWT + Google OAuth) and course management APIs with Node.js and Express.js.Designed MongoDB schemas for user data, course content, and student progress tracking.",
         repo:"hifhdfi",
         live_url:"hddfudf",
         status:"complete",
-        image_url:easycode.src
+        image_url:easycode.src,
+        technology :["React.js","taiwind","node.js","Mongo db","Vercel","+more"]
     },
     {
         type:"web",
@@ -32,7 +33,7 @@ const PROJECTS = [
         image_url:keyrush.src
     },
     {
-        type:"web",
+        type:"app",
         name:"easyCode",
         info:"gsdgusddddddddddddddddddddddddddddddddddddddddddddddddd",
         repo:"hifhdfi",
